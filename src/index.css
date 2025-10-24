@@ -18,14 +18,14 @@ All colors MUST be HSL.
     --popover-foreground: 0 0% 10%;
 
     /* Autoescola Socorrense Brand Colors - Orange/Yellow/Black */
-    --primary: 24 95% 48%; /* Softer Orange */
+    --primary: 24 85% 55%; /* Lighter Orange */
     --primary-foreground: 0 0% 100%;
     
-    --primary-light: 32 90% 55%; /* Softer lighter orange */
-    --primary-dark: 20 90% 38%; /* Softer darker orange */
+    --primary-light: 32 80% 65%; /* Very light orange */
+    --primary-dark: 20 80% 45%; /* Medium orange */
 
-    --secondary: 38 85% 55%; /* Softer Golden Tone */
-    --secondary-foreground: 0 0% 15%;
+    --secondary: 38 70% 65%; /* Very Light Golden Tone */
+    --secondary-foreground: 0 0% 20%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
@@ -63,11 +63,11 @@ All colors MUST be HSL.
     --popover: 0 0% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 24 95% 48%;
+    --primary: 24 85% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 38 85% 55%;
-    --secondary-foreground: 0 0% 15%;
+    --secondary: 38 70% 65%;
+    --secondary-foreground: 0 0% 20%;
 
     --muted: 0 0% 20%;
     --muted-foreground: 0 0% 65%;
