@@ -24,9 +24,29 @@ const BookingForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validação básica
-    if (!formData.name.trim() || !formData.phone.trim() || !formData.service) {
-      toast.error("Por favor, preencha todos os campos obrigatórios.");
+    // Validação de todos os campos obrigatórios
+    if (!formData.name.trim()) {
+      toast.error("Por favor, preencha seu nome completo.");
+      return;
+    }
+    
+    if (!formData.phone.trim()) {
+      toast.error("Por favor, preencha seu telefone/WhatsApp.");
+      return;
+    }
+    
+    if (!formData.service) {
+      toast.error("Por favor, selecione o serviço desejado.");
+      return;
+    }
+    
+    if (!formData.date) {
+      toast.error("Por favor, selecione a data preferida.");
+      return;
+    }
+    
+    if (!formData.time) {
+      toast.error("Por favor, selecione o horário preferido.");
       return;
     }
 
@@ -40,8 +60,8 @@ const BookingForm = () => {
 *Nome:* ${formData.name}
 *Telefone:* ${formData.phone}
 *Serviço:* ${formData.service}
-*Data Preferida:* ${formData.date || "A definir"}
-*Horário Preferido:* ${formData.time || "A definir"}
+*Data Preferida:* ${formData.date}
+*Horário Preferido:* ${formData.time}
 *Observações:* ${formData.observations || "Nenhuma"}
       `.trim();
 
@@ -104,7 +124,6 @@ const BookingForm = () => {
                     placeholder="Seu nome completo"
                     value={formData.name}
                     onChange={(e) => handleChange("name", e.target.value)}
-                    required
                     className="h-12"
                   />
                 </div>
@@ -120,7 +139,6 @@ const BookingForm = () => {
                     placeholder="(79) 98800-0000"
                     value={formData.phone}
                     onChange={(e) => handleChange("phone", e.target.value)}
-                    required
                     className="h-12"
                   />
                 </div>
@@ -133,7 +151,6 @@ const BookingForm = () => {
                   <Select
                     value={formData.service}
                     onValueChange={(value) => handleChange("service", value)}
-                    required
                   >
                     <SelectTrigger className="h-12">
                       <SelectValue placeholder="Selecione o serviço" />
@@ -153,7 +170,7 @@ const BookingForm = () => {
                   <div className="space-y-2">
                     <Label htmlFor="date" className="flex items-center gap-2 text-base">
                       <Calendar className="w-4 h-4" />
-                      Data Preferida
+                      Data Preferida *
                     </Label>
                     <Input
                       id="date"
@@ -167,7 +184,7 @@ const BookingForm = () => {
                   <div className="space-y-2">
                     <Label htmlFor="time" className="flex items-center gap-2 text-base">
                       <Clock className="w-4 h-4" />
-                      Horário Preferido
+                      Horário Preferido *
                     </Label>
                     <Input
                       id="time"
@@ -198,7 +215,7 @@ const BookingForm = () => {
                   disabled={isSubmitting}
                   className="w-full h-14 text-lg font-bold bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
                 >
-                  {isSubmitting ? "Enviando..." : "Enviar Solicitação"}
+                  {isSubmitting ? "Enviando..." : "Agendar"}
                 </Button>
 
                 <p className="text-sm text-muted-foreground text-center">
