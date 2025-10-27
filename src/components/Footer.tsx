@@ -61,13 +61,6 @@ const Footer = () => {
                   <p className="font-medium">8h às 18h</p>
                 </div>
               </div>
-              <div className="flex items-start gap-2">
-                <Clock className="w-4 h-4 mt-1" />
-                <div>
-                  <p>Sábado:</p>
-                  <p className="font-medium">8h às 12h</p>
-                </div>
-              </div>
             </div>
           </div>
 
