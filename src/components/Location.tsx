@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 const Location = () => {
   const address = "Av. Pref. Humberto dos Santos, 1525 - Conj. Marcos Freire I, Nossa Sra. do Socorro - SE, 49160-000";
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=Av+Pref+Humberto+dos+Santos+1525+Marcos+Freire+Nossa+Senhora+do+Socorro+SE`;
-  const googleMapsEmbed = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.8!2d-37.1256!3d-10.8541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDUxJzE0LjgiUyAzN8KwMDcnMzIuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr`;
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=Av.+Pref.+Humberto+dos+Santos+1525+Conj.+Marcos+Freire+I+Nossa+Sra.+do+Socorro+SE+49160-000`;
+  const googleMapsEmbed = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Av.+Pref.+Humberto+dos+Santos+1525+Conj.+Marcos+Freire+I+Nossa+Sra.+do+Socorro+SE+49160-000&zoom=15`;
 
   return (
     <section className="py-20 bg-muted" id="localizacao">
