@@ -51,6 +51,9 @@ All colors MUST be HSL.
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow-glow: 0 10px 40px -10px hsl(24 100% 50% / 0.4);
     --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+    
+    /* WhatsApp specific color */
+    --whatsapp: 142 70% 49%; /* #25D366 */
   }
 
   .dark {

@@ -15,13 +15,13 @@ const WhatsAppFloat = () => {
     >
       <Button
         size="lg"
-        className="h-16 w-16 rounded-full bg-[#25D366] hover:bg-[#20BA5A] shadow-2xl group-hover:scale-110 transition-all duration-300 p-0"
+        className="h-16 w-16 rounded-full bg-whatsapp hover:bg-whatsapp/90 shadow-2xl group-hover:scale-110 transition-all duration-300 p-0"
       >
-        <MessageCircle className="h-8 w-8 text-white" />
+        <MessageCircle className="h-8 w-8 text-primary-foreground" />
       </Button>
       
       {/* Pulse animation */}
-      <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-75 animate-ping" />
+      <span className="absolute inset-0 rounded-full bg-whatsapp opacity-75 animate-ping" />
     </a>
   );
 };
