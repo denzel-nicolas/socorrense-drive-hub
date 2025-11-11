@@ -60,7 +60,10 @@ const WhyChoose = () => {
                   {reason.description}
                 </p>
                 <Button
-                  onClick={() => window.open(whatsappUrl, '_blank')}
+                  onClick={() => {
+                    console.log('WhatsApp URL:', whatsappUrl);
+                    window.open(whatsappUrl, '_blank');
+                  }}
                   className="w-full"
                 >
                   Agendar Agora
