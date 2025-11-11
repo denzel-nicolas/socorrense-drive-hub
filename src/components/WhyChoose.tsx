@@ -1,4 +1,5 @@
 import { Trophy, Users, CarFront, Target } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const reasons = [
   {
@@ -39,6 +40,11 @@ const WhyChoose = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {reasons.map((reason, index) => {
             const Icon = reason.icon;
+            const whatsappMessage = encodeURIComponent(
+              `Olá! Gostaria de agendar uma aula na Autoescola Socorrense. Me interessei por: ${reason.title}`
+            );
+            const whatsappUrl = `https://wa.me/5579991876961?text=${whatsappMessage}`;
+            
             return (
               <div 
                 key={index}
@@ -53,6 +59,12 @@ const WhyChoose = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {reason.description}
                 </p>
+                <Button
+                  onClick={() => window.open(whatsappUrl, '_blank')}
+                  className="w-full"
+                >
+                  Agendar Agora
+                </Button>
               </div>
             );
           })}

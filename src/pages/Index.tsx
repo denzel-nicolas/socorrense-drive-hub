@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import WhyChoose from "@/components/WhyChoose";
-import BookingForm from "@/components/BookingForm";
 import Location from "@/components/Location";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
@@ -61,7 +60,6 @@ const Index = () => {
         <Hero />
         <Services />
         <WhyChoose />
-        <BookingForm />
         <Location />
         <Testimonials />
         <FAQ />
