@@ -43,7 +43,7 @@ const WhyChoose = () => {
             const whatsappMessage = encodeURIComponent(
               `Olá! Gostaria de agendar uma aula na Autoescola Socorrense. Me interessei por: ${reason.title}`
             );
-            const whatsappUrl = `https://wa.me/5579991876961?text=${whatsappMessage}`;
+            const whatsappUrl = `https://wa.me/5579988009580?text=${whatsappMessage}`;
             
             return (
               <div 
