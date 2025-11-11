@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: "Vocês oferecem aulas aos finais de semana?",
-    answer: "Nosso funcionamento é de segunda a sexta-feira, das 8h às 18h. Oferecemos horários flexíveis durante a semana para atender quem trabalha ou estuda. Entre em contato para verificar disponibilidade e agendar seus horários."
+    answer: "Nosso funcionamento é de segunda a sexta-feira, das 7h às 18h. Oferecemos horários flexíveis durante a semana para atender quem trabalha ou estuda. Entre em contato para verificar disponibilidade e agendar seus horários."
   }
 ];
 
