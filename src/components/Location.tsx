@@ -2,9 +2,9 @@ import { MapPin, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Location = () => {
-  const address = "Av. Pref. Humberto dos Santos, 1525 - Conj. Marcos Freire I, Nossa Sra. do Socorro - SE, 49160-000";
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=Av.+Pref.+Humberto+dos+Santos+1525+Conj.+Marcos+Freire+I+Nossa+Sra.+do+Socorro+SE+49160-000`;
-  const googleMapsEmbed = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Av.+Pref.+Humberto+dos+Santos+1525+Conj.+Marcos+Freire+I+Nossa+Sra.+do+Socorro+SE+49160-000&zoom=15`;
+  const address = "Av Moacir Oliveira, 1525 - Marcos Freire I, Nossa Senhora do Socorro - SE";
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=Av+Moacir+Oliveira+1525+Marcos+Freire+I+Nossa+Senhora+do+Socorro+SE`;
+  const googleMapsEmbed = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Av+Moacir+Oliveira+1525+Marcos+Freire+I+Nossa+Senhora+do+Socorro+SE&zoom=15`;
 
   return (
     <section className="py-20 bg-muted" id="localizacao">
